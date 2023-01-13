@@ -7,4 +7,4 @@ This repo is an archive of how exercises about data structures by implementing t
 - [ ] Hash Table
 - [ ] Tree
 - [ ] Heap
-- [] Double Linked List
+- [ ] Double Linked List
