@@ -1,5 +1,9 @@
 from .node import Node
 
+# Operazioni:
+# append(self, dato) -> void
+# remove(self, dato) -> str
+# search(self, dato) -> bool
 class LinkedList:
 
     def __init__(self):
@@ -45,3 +49,14 @@ class LinkedList:
                 string += current_node.info+" -> "
                 current_node = current_node.next_nodo        
         return string
+
+    def search(self, find):
+        current_node = self.head
+        if current_node == None:
+            return False
+        else:
+            while current_node != None:
+                if current_node.info == find:
+                    return True
+                else:
+                    current_node = current_node.next_nodo
