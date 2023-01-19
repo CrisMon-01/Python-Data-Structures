@@ -31,12 +31,15 @@ class Queue:
         return 
 
     def dequeue(self):
-        if self.size <=0 :
+        if self.size <=0:
             return False
         else:
             self.size -= 1
-            self.internal_queue.pop()
-            self.head = self.internal_queue[self.size-1]
+            self.internal_queue.pop(0)
+            if self.internal_queue:
+                self.head = self.internal_queue[0]
+            else:
+                self.head = -1              
             return True
 
     def the_head(self):
