@@ -4,7 +4,5 @@ This repo is an archive of how exercises about data structures by implementing t
 - [X] Linked List
 - [X] Stack
 - [X] Queue
-- [ ] Hash Table
 - [ ] Tree
-- [ ] Heap
 - [ ] Double Linked List
